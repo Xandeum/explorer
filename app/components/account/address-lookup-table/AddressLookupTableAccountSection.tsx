@@ -11,13 +11,13 @@ import { RefreshCw } from 'react-feather';
 export function AddressLookupTableAccountSection(
     params:
         | {
-              account: Account;
-              data: Uint8Array;
-          }
+            account: Account;
+            data: Uint8Array;
+        }
         | {
-              account: Account;
-              lookupTableAccount: AddressLookupTableAccountInfo;
-          }
+            account: Account;
+            lookupTableAccount: AddressLookupTableAccountInfo;
+        }
 ) {
     const account = params.account;
     const lookupTableState = React.useMemo(() => {
@@ -50,7 +50,7 @@ export function AddressLookupTableAccountSection(
                     </td>
                 </tr>
                 <tr>
-                    <td>Balance (SOL)</td>
+                    <td>Balance (XAND)</td>
                     <td className="text-lg-end text-uppercase">
                         <SolBalance lamports={account.lamports} />
                     </td>

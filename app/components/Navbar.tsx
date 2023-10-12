@@ -1,6 +1,7 @@
 'use client';
 
-import Logo from '@img/logos-solana/dark-explorer-logo.svg';
+// import Logo from '@img/logos-solana/dark-explorer-logo.svg';
+import Logo from '@img/logos-xandeum/02_XANDEUM_LOGO_WHITE.svg';
 import { useClusterPath } from '@utils/url';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -20,8 +21,8 @@ export function Navbar() {
     return (
         <nav className="navbar navbar-expand-md navbar-light">
             <div className="container">
-                <Link href={homePath}>
-                    <Image alt="Solana Explorer" height={22} src={Logo} width={250} />
+                <Link href={homePath} className='flex-row items-baseline'>
+                    <Image alt="Xandeum Explorer" height={40} src={Logo} width={220} />
                 </Link>
 
                 <button className="navbar-toggler" type="button" onClick={() => setCollapse(value => !value)}>
@@ -48,11 +49,10 @@ export function Navbar() {
                         </li>
                         <li className="nav-item">
                             <Link
-                                className={`nav-link${
-                                    selectedLayoutSegments[0] === 'tx' && selectedLayoutSegments[1] === '(inspector)'
-                                        ? ' active'
-                                        : ''
-                                }`}
+                                className={`nav-link${selectedLayoutSegments[0] === 'tx' && selectedLayoutSegments[1] === '(inspector)'
+                                    ? ' active'
+                                    : ''
+                                    }`}
                                 href={inspectorPath}
                             >
                                 Inspector

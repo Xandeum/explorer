@@ -162,10 +162,10 @@ function TpsBarChart({ performanceInfo, series, setSeries }: TpsBarChartProps) {
     const chartData: ChartData<'bar'> = {
         datasets: [
             {
-                backgroundColor: '#00D192',
+                backgroundColor: '#fda31b',
                 borderWidth: 0,
                 data: seriesData.map(val => val || 0),
-                hoverBackgroundColor: '#00D192',
+                hoverBackgroundColor: '#fda31b',
             },
         ],
         labels: seriesData.map((val, i) => {
@@ -409,10 +409,10 @@ function PingBarChart({
         }
 
         if (val.loss >= 0.25 && val.loss <= 0.5) {
-            return '#FFA500';
+            return '#622657';
         }
 
-        return val.loss > 0.5 ? '#f00' : '#00D192';
+        return val.loss > 0.5 ? '#f00' : '#fda31b';
     };
     const chartData: ChartData<'bar'> = {
         datasets: [
