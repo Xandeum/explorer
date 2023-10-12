@@ -19,6 +19,10 @@ export const metadata: Metadata = {
         maximumScale: 1,
         width: 'device-width',
     },
+    other: {
+        ["http-equiv"]: "Content-Security-Policy",
+        ["content"]: "upgrade-insecure-requests",
+    }
 };
 
 const rubikFont = Rubik({
