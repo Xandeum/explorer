@@ -62,7 +62,7 @@ export default withSentryConfig(nextConfig,
   {
     // For all available options, see:
     // https://github.com/getsentry/sentry-webpack-plugin#options
-    org: "solana",
+    org: "xandeum",
     project: "explorer",
     silent: true, // Suppresses source map uploading logs during build
 
