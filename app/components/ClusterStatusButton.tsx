@@ -10,7 +10,9 @@ export function ClusterStatusBanner() {
 
     return (
         <div className="container d-md-none my-4">
-            <div onClick={() => setShow(true)}>
+            {/* need to uncomment this to toggle the cluster selecting modal */}
+            {/* <div onClick={() => setShow(true)}> */}
+            <div>
                 <Button />
             </div>
         </div>
@@ -21,7 +23,9 @@ export function ClusterStatusButton() {
     const [, setShow] = useClusterModal();
 
     return (
-        <div onClick={() => setShow(true)}>
+        <div>
+            {/* need to uncomment this to toggle the cluster selecting modal */}
+            {/* <div onClick={() => setShow(true)}> */}
             <Button />
         </div>
     );
