@@ -1,12 +1,13 @@
 'use client';
 
-import { useCluster, useClusterModal } from '@providers/cluster';
+// import { useCluster, useClusterModal } from '@providers/cluster';
+import { useCluster } from '@providers/cluster';
 import { Cluster, ClusterStatus } from '@utils/cluster';
 import React from 'react';
 import { AlertCircle, CheckCircle } from 'react-feather';
 
 export function ClusterStatusBanner() {
-    const [, setShow] = useClusterModal();
+    // const [, setShow] = useClusterModal();
 
     return (
         <div className="container d-md-none my-4">
@@ -20,7 +21,7 @@ export function ClusterStatusBanner() {
 }
 
 export function ClusterStatusButton() {
-    const [, setShow] = useClusterModal();
+    // const [, setShow] = useClusterModal();
 
     return (
         <div>

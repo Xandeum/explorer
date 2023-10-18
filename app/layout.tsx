@@ -13,15 +13,15 @@ import { Metadata } from 'next/types';
 export const metadata: Metadata = {
     description: 'Inspect transactions, accounts, blocks, and more on the Xandeum blockchain',
     manifest: '/manifest.json',
+    other: {
+        ["content"]: "upgrade-insecure-requests",
+        ["http-equiv"]: "Content-Security-Policy",
+    },
     title: 'Explorer | Xandeum',
     viewport: {
         initialScale: 1,
         maximumScale: 1,
         width: 'device-width',
-    },
-    other: {
-        ["http-equiv"]: "Content-Security-Policy",
-        ["content"]: "upgrade-insecure-requests",
     }
 };
 
