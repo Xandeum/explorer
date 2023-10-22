@@ -41,10 +41,10 @@ export function clusterName(cluster: Cluster): string {
     }
 }
 
-export const MAINNET_BETA_URL = 'http://xand-rpc.devnet.xandeum.com:8899';
+export const MAINNET_BETA_URL = 'https://httptest.devnet.xandeum.com:8899';
 export const TESTNET_URL = 'https://api.testnet.solana.com';
 // export const DEVNET_URL = 'https://api.devnet.solana.com';
-export const DEVNET_URL = 'http://xand-rpc.devnet.xandeum.com:8899';
+export const DEVNET_URL = 'https://httptest.devnet.xandeum.com:8899';
 
 export function clusterUrl(cluster: Cluster, customUrl: string): string {
     const modifyUrl = (url: string): string => {

@@ -36,7 +36,7 @@ interface State {
     status: ClusterStatus;
 }
 
-const DEFAULT_CUSTOM_URL = 'http://xand-rpc.devnet.xandeum.com:8899';
+const DEFAULT_CUSTOM_URL = 'https://httptest.devnet.xandeum.com:8899';
 
 function clusterReducer(state: State, action: Action): State {
     switch (action.status) {
