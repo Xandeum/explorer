@@ -356,13 +356,13 @@ function TokenAccountCard({ account, info }: { account: Account; info: TokenAcco
 
     const balance = info.isNative ? (
         <>
-            {'\u20a6'}<span className="font-monospace">{new BigNumber(info.tokenAmount.uiAmountString).toFormat(9)}</span>
+            {'\u04fe'}<span className="font-monospace">{new BigNumber(info.tokenAmount.uiAmountString).toFormat(9)}</span>
         </>
     ) : <>{info.tokenAmount.uiAmountString}</>;
 
     useEffect(() => {
         if (info.isNative) {
-            setSymbol('XNT');
+            setSymbol('XAND');
         } else {
             setSymbol(tokenInfo?.symbol)
         }
@@ -415,10 +415,10 @@ function TokenAccountCard({ account, info }: { account: Account; info: TokenAcco
                 )}
                 {info.rentExemptReserve && (
                     <tr>
-                        <td>Rent-exempt reserve (XNT)</td>
+                        <td>Rent-exempt reserve (XAND)</td>
                         <td className="text-lg-end">
                             <>
-                                ₦
+                                Ӿ
                                 <span className="font-monospace">
                                     {new BigNumber(info.rentExemptReserve.uiAmountString).toFormat(9)}
                                 </span>

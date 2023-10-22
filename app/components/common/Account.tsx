@@ -41,7 +41,7 @@ export function AccountBalanceRow({ account }: AccountProps) {
     const { lamports } = account;
     return (
         <tr>
-            <td>Balance (XNT)</td>
+            <td>Balance (XAND)</td>
             <td className="text-lg-end text-uppercase">
                 <SolBalance lamports={lamports} />
             </td>
