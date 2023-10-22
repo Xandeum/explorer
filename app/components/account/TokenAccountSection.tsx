@@ -356,7 +356,7 @@ function TokenAccountCard({ account, info }: { account: Account; info: TokenAcco
 
     const balance = info.isNative ? (
         <>
-            {'\u25ce'}<span className="font-monospace">{new BigNumber(info.tokenAmount.uiAmountString).toFormat(9)}</span>
+            {'\u20a6'}<span className="font-monospace">{new BigNumber(info.tokenAmount.uiAmountString).toFormat(9)}</span>
         </>
     ) : <>{info.tokenAmount.uiAmountString}</>;
 
