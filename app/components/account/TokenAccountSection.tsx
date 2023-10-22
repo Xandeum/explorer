@@ -418,7 +418,7 @@ function TokenAccountCard({ account, info }: { account: Account; info: TokenAcco
                         <td>Rent-exempt reserve (XNT)</td>
                         <td className="text-lg-end">
                             <>
-                                ◎
+                                ₦
                                 <span className="font-monospace">
                                     {new BigNumber(info.rentExemptReserve.uiAmountString).toFormat(9)}
                                 </span>
