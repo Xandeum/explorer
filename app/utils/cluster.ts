@@ -51,7 +51,8 @@ export function clusterUrl(cluster: Cluster, customUrl: string): string {
         if (typeof window !== 'undefined' && window.location.hostname === 'localhost') {
             return url;
         } else {
-            return url.replace('api', 'explorer-api');
+            // return url.replace('api', 'explorer-api');
+            return url;
         }
     };
 

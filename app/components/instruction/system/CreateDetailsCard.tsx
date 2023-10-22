@@ -47,7 +47,7 @@ export function CreateDetailsCard(props: {
             </tr>
 
             <tr>
-                <td>Transfer Amount (XAND)</td>
+                <td>Transfer Amount (XNT)</td>
                 <td className="text-lg-end">
                     <SolBalance lamports={info.lamports} />
                 </td>
