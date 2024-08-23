@@ -20,13 +20,13 @@
 
 All claims, content, designs, algorithms, estimates, roadmaps,
 specifications, and performance measurements described in this project
-are done with the Xandeum Foundation's ("SF") best efforts. It is up to
+are done with the Xandeum Foundation's ("XF") best efforts. It is up to
 the reader to check and validate their accuracy and truthfulness.
 Furthermore nothing in this project constitutes a solicitation for
 investment.
 
-Any content produced by SF or developer resources that SF provides, are
-for educational and inspiration purposes only. SF does not encourage,
+Any content produced by XF or developer resources that XF provides, are
+for educational and inspiration purposes only. XF does not encourage,
 induce or sanction the deployment, integration or use of any such
 applications (including the code comprising the Xandeum blockchain
 protocol) in violation of applicable laws or regulations and hereby
